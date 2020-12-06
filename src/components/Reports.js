@@ -147,7 +147,7 @@ const Reports = () => {
                         </tbody>
                     </table>
                 </div>
-                <div className="col-md-6 mt-5" style={{ "text-align": "center" }}>
+                <div className="col-md-6 mt-5 mb-4" style={{ "text-align": "center" }}>
                     <div className="card" style={{ "width": "18rem" }}>
                         <div className="card-body">
                             <h4 className="card-title">Average people Count</h4>
@@ -157,7 +157,7 @@ const Reports = () => {
                 </div>
                 <button
                     disabled={details.length === 0 ? true : false}
-                    className="btn btn-danger btn-block"
+                    className="btn btn-danger btn-block m-4"
                     onClick={generateReport}
                 >{details.length === 0 ? 'No Participants' : 'Generate Report'}</button>
             </div>
