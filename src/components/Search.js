@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-// import initialData from '../dummyapi';
+//import initialData from '../dummyapi';
 import axios from 'axios';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../index.css';
@@ -65,6 +65,7 @@ const Search = () => {
     }
 
     const renderParticipants = () => {
+        console.log(participants)
         if (participants.length !== 0) {
             return participants.map(participant => {
                 return (

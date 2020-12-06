@@ -33,7 +33,7 @@ const Navbar = () => {
                             to="/search"
                             name="admin"
                             onClick={handleClick}
-                        >Search</Link>
+                        >Participants</Link>
                     </li>
                     <li className="nav-item">
                         <Link

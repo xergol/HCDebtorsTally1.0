@@ -50,7 +50,7 @@ const Form = () => {
     }
 
     return (
-        <div className="container mt-5 mb-5">
+        <div className="container mt-5 mb-5" style={{fontSize: "18px"}}>
             <h3 className="mb-4" style={{ textAlign: "center" }}>ReactJS Meetup</h3>
             <div className="card card-body py-4">
                 <h5 className="mt-3">If you’d like to participate in ReactJS meetup please fill in the below details</h5>
