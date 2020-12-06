@@ -29,7 +29,6 @@ const Reports = () => {
     }
 
     const getProfessionCount = () => {
-        console.log(details);
         const proArr = details.map(x => x.profession).reduce((total, num) => {
             if (!total[num]) {
                 total[num] = 1;
@@ -88,10 +87,10 @@ const Reports = () => {
     }
 
     return (
-        <div className="container mb-5" >
+        <div className="container mb-5 mt-5" >
             <h3 className="mt-4" style={{ "text-align": "center" }}>Reports</h3>
             <div className="row mb-2">
-                <div className="col-md-6 mt-4">
+                <div className="col-md-6 mt-3">
                     <table className="table table-bordered table-hover">
                         <thead>
                             <tr>
@@ -115,7 +114,7 @@ const Reports = () => {
                         </tbody>
                     </table>
                 </div>
-                <div className="col-md-6 mt-4" style={{ 'overflow-y': 'auto', 'height': '198px' }}>
+                <div className="col-md-6 mt-3" style={{ 'overflow-y': 'auto', 'height': '198px' }}>
                     <table className="table table-bordered table-hover" >
                         <thead>
                             <tr>
@@ -157,9 +156,10 @@ const Reports = () => {
                     </div>
                 </div>
                 <button
+                    disabled={details.length === 0 ? true : false}
                     className="btn btn-danger btn-block"
                     onClick={generateReport}
-                >Generate Report</button>
+                >{details.length === 0 ? 'No Participants' : 'Generate Report'}</button>
             </div>
         </div >
     )

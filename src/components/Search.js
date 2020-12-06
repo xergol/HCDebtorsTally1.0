@@ -65,7 +65,7 @@ const Search = () => {
     }
 
     const renderParticipants = () => {
-        if (participants !== 0) {
+        if (participants.length !== 0) {
             return participants.map(participant => {
                 return (
                     <div>
@@ -96,18 +96,17 @@ const Search = () => {
 
     return (
         <div className="container mt-5">
-            <form>
-                <div className="card card-body py-5 mb-5">
-                    <input
-                        type="search"
-                        className="form-control ds-input "
-                        id="search-input"
-                        placeholder="Search..."
-                        onChange={handleChange}
-                    />
-                    {renderParticipants()}
-                </div>
-            </form>
+            <h3 className="mb-4 mt-2" style={{ textAlign: "center" }}>RSVP Participats</h3>
+            <div className="card card-body py-5 mb-5">
+                <input
+                    type="search"
+                    className="form-control ds-input "
+                    id="search-input"
+                    placeholder="Search..."
+                    onChange={handleChange}
+                />
+                {renderParticipants()}
+            </div>
         </div>
     )
 }
