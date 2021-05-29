@@ -11,7 +11,7 @@ const Navbar = () => {
 
     return (
         <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
-            <Link className="navbar-brand">Navbar</Link>
+            <Link className="navbar-brand">Debtors Tally</Link>
             <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
                 <span className="navbar-toggler-icon"></span>
             </button>
@@ -23,7 +23,7 @@ const Navbar = () => {
                             to="/"
                             name="registration"
                             onClick={handleClick}
-                        >Registration
+                        >Debtors Form
                                 <span className="sr-only">(current)</span>
                         </Link>
                     </li>
@@ -33,7 +33,7 @@ const Navbar = () => {
                             to="/search"
                             name="admin"
                             onClick={handleClick}
-                        >Participants</Link>
+                        >Debtors List</Link>
                     </li>
                     <li className="nav-item">
                         <Link
