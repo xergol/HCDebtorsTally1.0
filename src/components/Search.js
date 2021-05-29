@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import { fetchParticipants } from '../actions'
 import { sortParticipant, sortParticipantByDate } from '../actions'
 import { connect } from 'react-redux'

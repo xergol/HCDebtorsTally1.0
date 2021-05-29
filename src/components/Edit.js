@@ -52,7 +52,6 @@ const Edit = ({ participants: { profile, loading }, fetchParticipant, updatePart
         name,
         contactNumber,
         address,
-        midPaymentDate,
         paymentDate,
         profession,
         debtAmount,

@@ -10,10 +10,6 @@ import history from '../history';
 
 class Delete extends React.Component {
 
-    constructor(props) {
-        super(props)
-    }
-
     componentDidMount() {
         this.props.fetchParticipant(this.props.match.params.id)
     }

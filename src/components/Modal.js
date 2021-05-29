@@ -1,6 +1,5 @@
 import React from 'react';
 import ReactDom from 'react-dom'
-import history from '../history';
 import { Redirect } from 'react-router-dom';
 
 //history.push("/search")

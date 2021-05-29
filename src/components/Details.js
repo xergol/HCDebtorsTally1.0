@@ -2,15 +2,10 @@ import React from "react";
 import Modal from "./Modal";
 import { connect } from 'react-redux';
 import { fetchParticipant } from '../actions'
-import history from '../history'
 import { Link, Redirect } from 'react-router-dom'
 
 
 class Details extends React.Component {
-
-    constructor(props) {
-        super(props)
-    }
 
     componentDidMount() {
         this.props.fetchParticipant(this.props.match.params.id)
